@@ -1,0 +1,32 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Tag de abertura do documento HTML -->
+<html>
+
+  <!-- Cabeçalho da página (não aparece na tela, só configurações) -->
+  <head>
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Participantes</title>
+
+  </head>
+
+  
+  <body>
+    
+    <h1>Lista de Participantes</h1>
+
+    
+    <ul>
+  <% participantesx.forEach(participante => { %>
+    
+      <li><%= participante.nome %>
+    </li>
+  <% }) %>
+</ul>
+
+  
+  </body>
+
+</html>

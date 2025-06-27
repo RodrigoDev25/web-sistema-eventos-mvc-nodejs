@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <!-- Título que aparece na aba do navegador -->
+    <title>Eventos</title>
+
+  </head>
+
+  
+  <body>
+   
+    <h1>Lista de Eventos</h1>
+
+    <ul>
+      <% eventosx.forEach(evento => { %>
+       <li>
+          <%= evento.nome %> – <%= evento.local %>
+       </li>
+
+      <% }) %>
+    </ul>
+
+  
+  </body>
+
+</html>
